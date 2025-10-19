@@ -1,37 +1,78 @@
-h1{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* NAVEGACIÓN */
+nav {
+    background-color: #2c3e50;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3498db;
+}
+
+nav a.activo {
+    background-color: #e74c3c;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-}
-
-p::first-line{
-    font-weight: bold;
-}
-
-p::first-letter{
-    font-size: 3em;
-    font-family: "Old English Text MT", "Goudy Old Style", serif;
-    float: left;
-    line-height: 0.5;
-    margin-right: 8px;
-    color: darkred;
-}
-
-::selection{
-    background: burlywood;
-    color: red;
-}
-
-.servicios{
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.servicios::before{
-    content: "-->";
-    color: blue;
-}
-
-.servicios::after{
-    content: "<--";
-    color: blue;
+    padding: 20px;
+    margin-top: 40px;
 }

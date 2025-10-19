@@ -1,10 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-
-a:link {
+main a:link {
     color: green;
     background-color: #e8f5e9;
     text-decoration: none;
@@ -14,17 +8,17 @@ a:link {
     margin: 5px 0;
 }
 
-a:visited {
+main a:visited {
     color: purple;
     background-color: #f3e5f5;
 }
 
-a:hover {
+main a:hover {
     color: red;
     background-color: #ffebee;
 }
 
-a:active {
+main a:active {
     color: orange;
     background-color: #ffe0b2;
 }
